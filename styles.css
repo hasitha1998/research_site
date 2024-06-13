@@ -1,0 +1,476 @@
+body {
+    font-family: "Helvetica Neue", sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #00796b;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav {
+    background: #004d40;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    border-bottom: 2px solid #00796b;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative;
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li:hover > .dropdown {
+    display: block;
+}
+
+nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    background: #00796b;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li .dropdown li {
+    display: block;
+}
+
+nav ul li .dropdown li a {
+    color: #fff;
+    padding: 5px;
+    display: block;
+    text-align: left;
+}
+
+main {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+section {
+    margin-left: 2%;
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #00796b;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #004d40;
+}
+
+.lit-review-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.lit-review-images {
+    flex: 1;
+    padding: 20px;
+}
+
+.lit-review-images img {
+    width: 80%;
+    margin-left: 10%;
+    height: auto;
+    margin-bottom: 15px; /* Space between images */
+}
+
+.lit-review-text {
+    flex: 2;
+    padding: 20px;
+    background-color: #ffffff;
+    border-left: 2px solid #004d40; /* Vertical line for separation */
+    margin-left: 20px; /* To avoid edge touching */
+}
+
+.lit-review-text h2 {
+    color: #004d40;
+    margin-bottom: 10px; /* Space between heading and text */
+}
+
+.lit-review-text p {
+    color: #004d40;
+    line-height: 1.6;
+}
+/*research Gap*/
+.research-gap-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.research-gap-grid {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    margin: 0 10px; /* Space between grid items */
+}
+
+.grid-item {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #004d40;
+    background-color: #ffffff;
+    margin: 0 10px;
+}
+
+.grid-item h2 {
+    color: #004d40;
+    margin-bottom: 10px; /* Space between heading and text */
+}
+
+.grid-item p {
+    color: #004d40;
+    line-height: 1.6;
+}
+/*Research Problem*/
+
+.research-problem-section {
+    margin: 20px 0;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.problem-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px; /* Space between sections */
+}
+
+.problem-text {
+    flex: 1;
+    padding: 20px;
+    
+    background-color: #ffffff;
+    margin: 10px;
+}
+
+.problem-image {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+   
+    background-color: #ffffff;
+}
+
+.problem-image img {
+    width: 50%;
+    height: auto;
+}
+
+.proposed-solution {
+    padding: 20px;
+    
+    background-color: #ffffff;
+    margin: 10px;
+}
+
+.proposed-solution p {
+    color: #004d40;
+    line-height: 1.6;
+}
+/*Research Objectives*/
+.research-objectives-section {
+    margin: 20px 0;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.objective-container {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #004d40;
+    background-color: #ffffff;
+    margin: 10px;
+    text-align: left;
+}
+
+.objective-container.left {
+    order: 1; /* left container appears first in row */
+}
+
+.objective-container.right {
+    order: 2; /* right container appears second in row */
+}
+
+.objective-container h2 {
+    color: #004d40;
+    margin-bottom: 10px; /* Space between heading and text */
+}
+
+.objective-container p {
+    color: #004d40;
+    line-height: 1.6;
+}
+ /* Methodology */
+ .methodology-section {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.methodology-container {
+    flex: 1;
+    padding: 20px;
+    
+    background-color: #ffffff;
+    margin: 10px;
+}
+
+.methodology-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.methodology-container h2 {
+    color: #004d40;
+    margin-bottom: 10px; /* Space between heading and text */
+}
+
+.methodology-container p {
+    color: #004d40;
+    line-height: 1.6;
+}
+/* Technologies */
+.technologies-section {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.technologies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between images */
+}
+
+.tech-item {
+    flex: 1 1 calc(16.66% - 20px); /* Each image takes ~16.66% width minus the gap */
+    margin: 10px;
+    text-align: center;
+}
+
+.tech-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.tech-item p {
+    color: #004d40;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+body {
+    font-family: "Helvetica Neue", sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #004d40;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.milestone {
+    padding: 20px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.milestone::after {
+    content: ' ';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -12.5px;
+    background-color: white;
+    border: 4px solid #004d40;
+    top: 30px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+}
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #004d40;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #004d40;
+}
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #004d40;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #004d40 transparent transparent;
+}
+
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.content h3 {
+    margin-top: 0;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+    position: relative;
+}
+
+.progress {
+    height: 20px;
+    background-color: #004d40;
+    width: 0;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+
+.milestone:hover .progress {
+    width: 100%;
+}
+
+/* CSS for the card views and download buttons */
+body {
+    font-family: "Helvetica Neue", sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.download-section {
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 23%;
+    margin: 10px 0;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+}
+
+.card p {
+    color: #777;
+    margin: 10px 0;
+}
+
+.card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00796b;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.card .btn:hover {
+    background: #004d40;
+}
