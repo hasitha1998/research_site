@@ -474,3 +474,53 @@ body {
 .card .btn:hover {
     background: #004d40;
 }
+
+ /* CSS for the card views and profile information */
+ .about-section {
+    padding: 20px;
+}
+
+.card-container1 {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.card1 {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 23%;
+    margin: 20px 5px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.card1:hover {
+    transform: translateY(-10px);
+}
+
+.card1 img {
+    max-width: 100%;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+.card1 h3 {
+    margin: 15px 0 10px;
+}
+
+.card1 p {
+    color: #777;
+    margin: 10px 0;
+}
+
+.card1 a {
+    color: #00796b;
+    text-decoration: none;
+    margin-top: 10px;
+    display: block;
+}
